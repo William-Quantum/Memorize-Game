@@ -17,14 +17,14 @@ struct Memory_Game <CardContent> {
     init(numberOfPairOfCards: Int, creatCardContent: (Int)->CardContent) {
         cards = Array<Card>()
         for pairIndex in 0..<numberOfPairOfCards {
-            let content: CardContent = creatCardContent(pairIndex)
-            cards.append(Card(isfaceup: false, isMatched: false, content: CardContent))
-            cards.append(Card(isfaceup: false, isMatched: false, content: CardContent))
+            let content = creatCardContent(pairIndex)
+            cards.append(Card(content: content))
+            cards.append(Card(content: content))
         }
     }
     
     struct Card {
-        var isfaceup: Bool = false
+        var isfaceup: Bool = true
         var isMatched: Bool = false
         var content: CardContent
     }
