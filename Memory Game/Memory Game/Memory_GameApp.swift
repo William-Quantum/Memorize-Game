@@ -1,14 +1,14 @@
 //
-//  Memorize_GameApp.swift
-//  Memorize Game
+//  Memory_GameApp.swift
+//  Memory Game
 //
-//  Created by mac on 2/4/22.
+//  Created by mac on 2/9/22.
 //
 
 import SwiftUI
 
 @main
-struct Memorize_GameApp: App {
+struct Memory_GameApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
